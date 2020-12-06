@@ -209,7 +209,7 @@ impl<REMAP, PINS> Spi<SPI2, REMAP, PINS, u8> {
     }
 }
 
-#[cfg(any(feature = "high", feature = "connectivity"))]
+#[cfg(any(feature = "connectivity"))]
 impl<REMAP, PINS> Spi<SPI3, REMAP, PINS, u8> {
     /**
       Constructs an SPI instance using SPI3 in 8bit dataframe mode.
